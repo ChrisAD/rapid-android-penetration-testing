@@ -1,0 +1,12 @@
+ 
+RAPT Todo: 
+- Let user select device
+	- Device folder in appdata. Show already downloaded apps
+- AndroidManifest.xml parsing
+	- AppName
+	- Components
+	- Broadcast receivers 
+	- ACtivities
+	- Services 
+	- Permissions 
+	- hardware/software features
