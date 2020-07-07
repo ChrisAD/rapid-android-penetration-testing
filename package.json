@@ -9,7 +9,7 @@
   "author": "Chris Dale @chrisadale",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^3.0.2",
+    "electron": "^9.1.0",
     "xml2js": "^0.4.19"
   },
   "dependencies": {
