@@ -25,7 +25,11 @@ function loadPackages() {
 	$("#title").html("Loading packages...");
 	exec("adb shell pm list packages", (err, stdout, stderr) => {
 	  if (err) {
-		$("#errors").html(`exec error: ${err}`);
+		$("#errors").html(`exec error: ${err}. Debug steps: \n
+		- ADB must be available on your path.\n
+		- Phone must be in developer mode\n
+		- System must be trusted by phone (allow RSA signature)\n
+		- apktool must be on system and in path`);
 		return;
 	  }
 	  apkPackages = stdout.split(/\r?\n/);
@@ -48,10 +52,6 @@ function loadPackages() {
 	});
 		
 };
-
-function decodeAPK() {
-}
-
 
 function createDirectory(directory, callback) {  
 	raptLog(arguments.callee.name, directory);
